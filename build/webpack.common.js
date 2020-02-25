@@ -64,7 +64,7 @@ const commonConfig = {
         },{
             test:/\.jsx$/,
             loader: 'awesome-typescript-loader',//支持tsx
-        }
+        },
         {
             test: /\.(eot|woff2?|ttf|svg)$/,
             use: {

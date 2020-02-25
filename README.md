@@ -33,3 +33,5 @@ git checkout Multiplt-Page        // 切换到多页面配置
 
 ### 原仓库地址
 https://github.com/Rashomon511/React-Whole-barrels.git
+### details
+- PWA的实现使用了workbox-webpack-plugin插件，该插件在生产模式下运行，不能进行用户自定义sw.js文件，必须通过更改插件的相关配置实现；另一种方案是开启https服务，使用serviceworker-webpack-plugin，该插件可以自定义sw.js（配置该文件的路径即可），使用service work服务都需要在脚本中进行注册
