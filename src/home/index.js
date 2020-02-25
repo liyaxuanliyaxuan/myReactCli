@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import {connect} from 'dva';
 import {Layout, Menu, Icon} from 'antd';
 import './index.less';
-
+import {test} from './index.tsx'
 
 const {Header, Content, Footer, Sider} = Layout;
 @connect(state => ({home: state.home}))
 class Home extends Component {
 	render() {
+	
 		return (
 			<Layout className="home">
 				<Sider
@@ -21,6 +22,7 @@ class Home extends Component {
 					}}
 				>
 					<div className="logo" />
+					
 					<Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
 						<Menu.Item key="1">
 							<Icon type="user" />
