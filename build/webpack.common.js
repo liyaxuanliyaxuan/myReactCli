@@ -58,7 +58,7 @@ const commonConfig = {
                 options: {
                     name: '[name]_[hash].[ext]', // placeholder 占位符
                     outputPath: 'images/', // 打包文件名
-                    limit: 204800, // 小于200kb则打包到js文件里，大于则打包到imgages里
+                    limit: 204800, // 小于200kb则打包到js文件里，大于则打包到images里
                 },
             },
         },{
@@ -82,7 +82,7 @@ const commonConfig = {
         hints: false
     },
     output: {
-        publicPath: "/",
+        publicPath: "/",//可以设置cdn的存放路径
         path: path.resolve(__dirname, '../dist') // 打包后文件夹存放路径
     }
 }
